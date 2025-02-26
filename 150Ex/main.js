@@ -137,3 +137,15 @@ const divide = () => {
   console.log(result);
   msg.innerHTML = `The result is: ${result}`;
 };
+
+//Ex 149
+
+const verifyCapìtalizationAndChangeIt = (text) => {
+  return text.toUpperCase() === text ? text.toLowerCase() : text.toUpperCase();
+};
+
+const changeCapitalization = () => {
+  const inputText = document.getElementById("inputText").value;
+  const capitalized = verifyCapìtalizationAndChangeIt(inputText);
+  document.getElementById("inputText").value = capitalized;
+};
