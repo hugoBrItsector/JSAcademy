@@ -138,6 +138,26 @@ const divide = () => {
   msg.innerHTML = `The result is: ${result}`;
 };
 
+//Ex 32
+
+const checkRange = () => {
+  const inputNumber1 = document.getElementById("inputNumber32").value;
+  const inputNumber2 = document.getElementById("inputNumber32_2").value;
+  const msg = document.querySelector(".msg32");
+
+  const x1 = Math.abs(inputNumber1 - 100);
+  const y1 = Math.abs(inputNumber2 - 100);
+
+  //check nearest
+
+  if (x1 < y1) {
+    msg.innerHTML = `${inputNumber1} is nearets to 100`;
+  }
+
+  if (y1 < x1) {
+    msg.innerHTML = `${inputNumber2} is nearets to 100`;
+  }
+};
 //Ex 149
 
 const verifyCapìtalizationAndChangeIt = (text) => {
@@ -174,6 +194,6 @@ function swapHalfArray() {
   arrayString = array.join("");
 
   // inputArray.value = arrayString;
-  // inputArray = arrayString;
+  //inputArray = arrayString;
   document.getElementById("inputArray").value = arrayString;
 }
