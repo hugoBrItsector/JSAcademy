@@ -149,3 +149,31 @@ const changeCapitalization = () => {
   const capitalized = verifyCapìtalizationAndChangeIt(inputText);
   document.getElementById("inputText").value = capitalized;
 };
+
+//Ex 148
+
+function swapHalfArray() {
+  let array = [];
+  const msg = document.getElementById("msgError");
+  let inputArray = document.getElementById("inputArray").value;
+  let arrayString = "";
+
+  array = inputArray.split("");
+
+  if (array.length % 2 !== 0) {
+    msg.innerHTML = "<h1>The amount length must be even!</h1>";
+  }
+  for (let i = 0; i < array.length / 2; i++) {
+    const temporary = array[i];
+    array[i] = array[i + array.length / 2];
+    array[i + array.length / 2] = temporary;
+  }
+
+  console.log(array);
+
+  arrayString = array.join("");
+
+  // inputArray.value = arrayString;
+  // inputArray = arrayString;
+  document.getElementById("inputArray").value = arrayString;
+}
