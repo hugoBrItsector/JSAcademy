@@ -138,6 +138,12 @@ const divide = () => {
   msg.innerHTML = `The result is: ${result}`;
 };
 
+//Ex12
+const showUrl = () => {
+  const URL = document.URL;
+  document.getElementById("url").value = URL;
+};
+
 //Ex 32
 
 const checkRange = () => {
