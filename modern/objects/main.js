@@ -1,6 +1,7 @@
 //Objects
 const person = {
   name: "hugo",
+  idade: 0,
   walk() {
     console.log(this);
   },
